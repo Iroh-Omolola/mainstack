@@ -48,7 +48,7 @@ export const DonoughtChart = ({ background, details, label }) => {
   return (
     <div className="">
       <div className="inline-block relative ">
-        <Doughnut className="h-40 xs:w-40 xl:w-52 xl:h-52" data={data} options={options} />
+        <Doughnut className="h-32 w-32 xs:h-40 xs:w-40 xl:w-52 xl:h-52" data={data} options={options} />
       </div>
     </div>
   );
