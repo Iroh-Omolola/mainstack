@@ -1,0 +1,32 @@
+import * as React from "react";
+export const Netherland = (props) => (
+  <svg
+    width={21}
+    height={16}
+    viewBox="0 0 21 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g clipPath="url(#clip0_703_931)">
+      <rect y={0.5} width={21} height={15} rx={3} fill="white" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M0 10.5H21V15.5H0V10.5Z"
+        fill="#1E448D"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M0 0.5H21V5.5H0V0.5Z"
+        fill="#B01923"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_703_931">
+        <rect y={0.5} width={21} height={15} rx={3} fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
