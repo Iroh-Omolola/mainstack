@@ -26,7 +26,7 @@ const Dashboard = () => {
   const [mediaDetails, setMediaDetails] = useState([]);
   const [mediaPercent, setMediaPercent] = useState([]);
 
-  const { data, isLoading } = useGetDataQuery(date == "All Time" ? " " : " ");
+  const { data, isLoading } = useGetDataQuery(date);
 
   useEffect(() => {
     if (data == null) {
