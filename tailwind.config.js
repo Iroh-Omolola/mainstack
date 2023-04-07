@@ -29,16 +29,12 @@ module.exports = {
     fontFamily: {
       sohne: ["../components/assets/font/Test-Söhne-Collection"],
       kraig: [
-        "../components/assets/font/Test-Söhne-Collection1/Test-Söhne/TestSöhne-Kräftig.otf",
-        "../components/assets/font/Test-Söhne-Collection1/Test-Söhne/TestSöhne-KräftigKursiv.otf",
         "../components/assets/font/Test-Söhne-Collection/Test-Söhne/test-soehne-kraftig.woff2",
       ],
       buch: [
-        "../components/assets/font/Test-Söhne-Collection1/Test-Söhne/TestSöhne-Buch.otf",
         "../components/assets/font/Test-Söhne-Collection/Test-Söhne/test-soehne-buch.woff2",
       ],
       haibett: [
-        "../components/assets/font/Test-Söhne-Collection1/Test-Söhne/TestSöhne-Halbfett.otf",
         "../components/assets/font/Test-Söhne-Collection/Test-Söhne/test-soehne-halbfett.woff2",
       ],
     },
