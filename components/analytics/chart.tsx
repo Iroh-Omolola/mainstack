@@ -9,7 +9,7 @@ interface AnalyticsChartProps {
   min?: number;
   max?: number;
   stepSize?: number;
-  headTitle: string;
+  headTitle: any;
   headIconColor?: "red" | "green";
   floatingCard?: any;
   boxStyle?: string;
