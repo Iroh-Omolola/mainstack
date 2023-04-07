@@ -85,7 +85,7 @@ export const DashboardSideBar = () => {
             <Logo />
           </div>
         </Link>
-        <div className="w-full space-y-8  lg:space-y-36">
+        <div className="w-full space-y-4 lg:space-y-36">
           <div className="">
             <div className=" overflow-x-hidden  ">
               {BAR_ROUTES_ONE?.map((link, id) => (
