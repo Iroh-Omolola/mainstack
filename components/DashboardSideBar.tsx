@@ -82,7 +82,7 @@ export const DashboardSideBar = () => {
       <div className="flex w-full flex-col items-center lg:items-start pl-0  lg:mt-0">
         <Link href={"/"}>
           <div className="flex h-[60px] mt-[22px] lg:pl-[32px] cursor-pointer ">
-            <Logo />
+            <Logo/>
           </div>
         </Link>
         <div className="w-full space-y-4 lg:space-y-36">
