@@ -32,4 +32,9 @@ src: url("../components/assets/font/Test-Söhne-Collection/Test-Söhne-Breit/tes
 body{
   width: 100%;
   height: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar {
+    display: none;
 }

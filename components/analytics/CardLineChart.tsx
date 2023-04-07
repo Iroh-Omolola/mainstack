@@ -93,18 +93,6 @@ export default function CardLineChart({ data, min, max, stepSize }: Props) {
         display: true,
         min: min,
         max: max,
-        // ticks: {
-        //   beginAtZero: true,
-        //   // display: true,
-        //   callback: function (value, index, ticks) {
-        //     if (stepSize === 20000) {
-        //       return "$" + value;
-        //     }
-        //     return value;
-        //   },
-        //   // forces step size to be 5 units
-        //   stepSize: stepSize, // <----- This prop sets the stepSize
-        // },
         grid: {
           borderDash: function (context: any) {
             if (context.index === 0) {
@@ -121,8 +109,6 @@ export default function CardLineChart({ data, min, max, stepSize }: Props) {
             return "#DBDEE5";
           },
           zeroLineColor: "#DBDEE5",
-          // zeroLineBorderDash: [0],
-          // zeroLineBorderDashOffset: [0],
         },
       },
     },

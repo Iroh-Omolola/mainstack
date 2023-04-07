@@ -15,10 +15,10 @@ export const DashboardLayout = ({children}:DashboardLayoutProps) => {
         </div>
         <div className="w-full  overflow-x-hidden px-3 ">
           <div className="flex-col lg:px-5 xl:px-10 ">
-            <div className="top-0 w-full  mb-12  justify-between">
+            <div className="top-0 w-full  justify-between">
               <NavBar />
             </div>
-            <div className=" ">
+            <div className=" mt-24">
               <div className="w-full overflow-hidden">
                 {children}
               </div>

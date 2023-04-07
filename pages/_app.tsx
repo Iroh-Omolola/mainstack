@@ -2,8 +2,13 @@ import "../styles/index.scss";
 import Head from "next/head";
 import { AppProps } from "next/app";
 import React from "react";
+import { store } from "../services/store";
+import { Provider } from "react-redux";
 
-const AppTheme: React.FC = ({ children }) => {
+type IProps = {
+  children: React.ReactNode; 
+};
+const AppTheme: React.FC<IProps> = ({ children }) => {
   return (
     <div>
       <Head>
@@ -35,14 +40,16 @@ const AppTheme: React.FC = ({ children }) => {
   );
 };
 
-function MyApp({ Component, pageProps }: AppProps) {
+export const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <div className=" overflow-y-hidden">
+      <Provider store={store}>
         <AppTheme>
           <Component {...pageProps} />
         </AppTheme>
+      </Provider>
     </div>
   );
-}
+};
 
 export default MyApp;
