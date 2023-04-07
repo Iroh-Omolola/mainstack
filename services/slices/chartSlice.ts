@@ -1,9 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 interface IProps{
-  top_locations: [],
-  graph_data:[],
-  top_sources:[],
+  top_locations: any,
+  graph_data:any,
+  top_sources:any,
 }
 export const dataApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: "https://fe-task-api.mainstack.io" }),
