@@ -25,6 +25,7 @@ const Dashboard = () => {
   const [graphValues, setGraphValues] = useState([]);
   const [mediaDetails, setMediaDetails] = useState([]);
   const [mediaPercent, setMediaPercent] = useState([]);
+  const [total, setTotal] = useState([]);
 
   const { data, isLoading } = useGetDataQuery();
 
@@ -45,7 +46,7 @@ const Dashboard = () => {
       const values = Object.values(graph);
       const dateGraph = keys.map((d) => moment(d).format("D MMM "));
       setGraphKeys(dateGraph);
-
+       setTotal(values.reduce((a, b) => a + b, 0));
       setGraphValues(values);
     }
   }, [graph]);
@@ -116,7 +117,7 @@ const Dashboard = () => {
           ) : (
             <AnalyticsChart
               headFooter={<Info />}
-              headTitle="500"
+              headTitle={total}
               date={`${date.split(" ")[0]} ${date.split(" ")[1].toLowerCase()}`}
               minTitle={"Page Views"}
               data={dataChart}
